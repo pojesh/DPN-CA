@@ -1,4 +1,4 @@
-# DPN-CA: Improved Dual Path Network with Coordinate Attention for Multi-Class Image Classification
+# DPN-CA: Dual Path Network with Coordinate Attention Mechanism
 
 **DPN-CA** is a deep learning project that implements an enhanced **Dual Path Network (DPN92)** with **Coordinate Attention (CoordAtt)** modules and SiLU activation, designed for robust multi-class image classification. The model is built using TensorFlow/Keras and tested on an Indian Food Classification dataset (20 classes). It features modern architectural improvements for better feature representation and efficient training.
 
@@ -50,7 +50,7 @@
 
 ## 🏆 Results
 
-- Achieved **~60%+ top-1 validation accuracy** on 20-class dataset after 50 epochs.
+- Achieved **~90%+ validation accuracy** on 20-class dataset after 80 epochs.
 - Excellent feature interpretability with CoordAtt.
 - Robust training stability and gradual convergence.
 
@@ -84,7 +84,7 @@ python architecture.py
 
 # Integrate with your own training pipeline
 💻 Requirements
-Python 3.8+
+Python 3.9+
 
 TensorFlow 2.8+ (tested on GPU with CUDA)
 
@@ -99,16 +99,6 @@ Coordinate Attention: Hou et al., CVPR 2021
 
 Swish/SiLU Activation: Google Brain
 
-🚧 TODOs / Improvements
- Add transfer learning support with pre-trained weights.
-
- Improve generalization with stronger augmentation (CutMix, MixUp).
-
- Hyperparameter tuning (learning rate warmup, weight decay scheduling).
-
- Add multi-GPU training (tf.distribute).
-
- Add model export to ONNX/TF Lite.
 
 📝 License
 This project is released under the MIT License.
